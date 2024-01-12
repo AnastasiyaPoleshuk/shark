@@ -1,0 +1,48 @@
+$small-font: 12px;
+$middle-font: 16px;
+$big-font: 20px;
+
+$yellow-color: #ffed89;
+$white-color: #fff;
+$gray-color: #2f2a2a;
+$warning-color: #ff5d5d;
+
+$font-family: "Montserrat";
+
+$main-width: 1000px;
+
+@mixin font {
+  font-family: $font-family;
+  font-size: $middle-font;
+  font-weight: normal;
+  font-style: normal;
+  letter-spacing: 1px;
+  color: $gray-color;
+}
+
+@mixin h1 {
+  font-weight: 500;
+  font-size: calc($big-font * 3);
+  line-height: 64px;
+  letter-spacing: 0.2px;
+}
+
+@mixin h2 {
+  font-weight: 600;
+  font-size: calc($big-font * 2);
+  line-height: 54px;
+}
+
+@mixin h3 {
+  font-weight: 700;
+  font-size: $big-font;
+  line-height: 40px;
+  letter-spacing: 0.1px;
+}
+
+@mixin subtitle {
+  font-weight: 600;
+  font-size: $middle-font;
+  line-height: 10px;
+  letter-spacing: 0.1px;
+}
